@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "../src/styles/Layout.module.css";
+import Header from "./Header";
 import Nav from "./Nav";
 
 type LayoutProps = {
@@ -12,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
       <Nav />
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1>MY FIRST NEXTjs PROJECT</h1>
+          <Header />
           {children}
         </main>
       </div>
